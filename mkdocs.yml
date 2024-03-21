@@ -15,11 +15,26 @@ copyright: Copyright &copy; 2024 AppFit &amp; Uptech Studio.
 
 nav:
   - AppFit: 'https://appfit.io/'
-  - SDK Overview:
-    - Overview: index.md
-    - Swift: swift/index.md
-    - Flutter: flutter/index.md
-    - Kotlin: kotlin/index.md
+  - Documentation:
+    - index.md
+
+    # Swift
+    - Swift:
+      - swift/index.md
+      - Installation: swift/installation.md
+      - Usage: swift/usage.md
+    
+    # Flutter
+    - Flutter:
+      - flutter/index.md
+      - Installation: flutter/installation.md
+      - Usage: flutter/usage.md
+    
+    # Kotlin
+    - Kotlin:
+      - kotlin/index.md
+      - Installation: kotlin/installation.md
+      - Usage: kotlin/usage.md
 
 # Configuration
 theme:

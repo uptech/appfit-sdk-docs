@@ -1,0 +1,16 @@
+site_name: AppFit SDK Documentation
+site_url: https://documentation.appfit.io/
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - swift
+    - dart
+    - kotlin
+    - javascript
+    - typescript

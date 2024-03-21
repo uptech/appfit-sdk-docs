@@ -1,0 +1,14 @@
+:root {
+    /* General Colors */
+    --md-primary-fg-color: #242E77;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark: #0f4f73;
+    --md-accent-fg-color: #2f1761;
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: #f5d9e1;
+    --banner-bg-color: #2f1761;
+    --md-footer-bg-color: #2f1761;
+    --md-footer-fg-color--lighter: #c9c2f5;
+    --heading-color: #3d3d3d;
+    --boxes-background: #f3f3f3;
+}

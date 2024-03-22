@@ -1,6 +1,6 @@
 # AppFit Developer Documentation
 
-Welcome to the AppFit Developer Documentation.
+Welcome to the AppFit Developer Documentation!
 
 Startups are overwhelming. Stay focused with AppFit.
 

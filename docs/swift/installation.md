@@ -10,3 +10,7 @@ dependencies: [
     .package(url: "https://github.com/uptech/appfit-swift-sdk.git", .upToNextMajor(from: "1.0.0"))
 ]
 ```
+
+---
+
+The AppFit SDK is Open Source. Find it on [GitHub here](https://github.com/uptech/appfit-swift-sdk)

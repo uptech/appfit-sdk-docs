@@ -6,9 +6,10 @@ site_description: >-
     Developer resources for AppFit analytics platform.
 
 # Repository
-repo_name: appfit-sdk-docs
-repo_url: https://github.com/uptech/appfit-sdk-docs
-edit_uri: edit/main/docs/
+# We want to hide this from the site, so we have this commented out.
+#repo_name: appfit-sdk-docs
+#repo_url: https://github.com/uptech/appfit-sdk-docs
+#edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; 2024 AppFit &amp; Uptech Studio. 
@@ -35,6 +36,11 @@ nav:
       - kotlin/index.md
       - Installation: kotlin/installation.md
       - Usage: kotlin/usage.md
+  
+  # SDK Links
+  - Swift SDK: 'https://github.com/uptech/appfit-swift-sdk'
+  - Flutter SDK: 'https://github.com/uptech/appfit-flutter-sdk'
+  - Kotlin SDK: 'https://github.com/uptech/appfit-kotlin-sdk'
 
 # Configuration
 theme:
@@ -62,8 +68,8 @@ theme:
   language: en
   features:
     - content.code.copy # enables code copy to clipboard feature
-    - content.action.edit # adds edit icon to pages
-    - content.action.view # adds view page source icon to pages
+    #- content.action.edit # adds edit icon to pages
+    #- content.action.view # adds view page source icon to pages
     #- announce.dismiss # this feature is perenially buggy, so keep it disabled unless necessary.
     - content.code.annotate # enables code annotation feature
     - content.tooltips #enables enhanced tooltips
@@ -85,7 +91,6 @@ theme:
 
 extra_css:
   - stylesheets/extra.css # Amplitude Styles
-
 
 plugins:
   - search # the search plugin

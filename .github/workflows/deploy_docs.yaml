@@ -14,16 +14,16 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
+        cache: 'pip'
 
     - name: Install dependencies
       uses: jannekem/run-python-script-action@v1.7
       with:
         script: |
-          python -m pip install --upgrade pip
-          pip install requirments.txt
+          pip install -r requirements.txt
 
     - name: Build Site
       uses: jannekem/run-python-script-action@v1.7

@@ -15,22 +15,22 @@ jobs:
 
     - name: Set up Python
       uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
+      with:
+        python-version: '3.x'
 
     - name: Install dependencies
       uses: jannekem/run-python-script-action@v1.7
-        with:
-          script: |
-            python -m pip install --upgrade pip
-            pip install requirments.txt
+      with:
+        script: |
+          python -m pip install --upgrade pip
+          pip install requirments.txt
 
     - name: Build Site
       uses: jannekem/run-python-script-action@v1.7
-        with:
-          script: |
-            python -m pip install --upgrade pip
-            mkdocs build
+      with:
+        script: |
+          python -m pip install --upgrade pip
+          mkdocs build
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1

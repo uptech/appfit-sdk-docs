@@ -5,7 +5,7 @@ To configure the AppFit SDK, simply construct an `AppFitConfiguration` class and
 Your API Key can be obtained from your AppFit Dashboard.
 
 ```swift
-let configuration = AppFitConfiguration(apiKey: "<key>")
+let configuration = AppFitConfiguration(apiKey: "API_KEY")
 let appFit = AppFit(configuration: configuration)
 ```
 
@@ -14,10 +14,10 @@ Once you have the client constructed, tracking an event is as simple as calling 
 A full example can be found below.
 
 ```swift
-import AppFit;
+import AppFit
 
 // Create the AppFitConfiguration
-let configuration = AppFitConfiguration(apiKey: "<key>")
+let configuration = AppFitConfiguration(apiKey: "API_KEY")
 
 // Create the AppFit Client
 let appFit = AppFit(configuration: configuration)

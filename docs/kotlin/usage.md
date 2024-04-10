@@ -16,7 +16,7 @@ A full example can be found below.
 import appfit;
 
 // Create the AppFitConfiguration
-val configuration = AppFitConfiguration(apiKey = "<key>")
+val configuration = AppFitConfiguration(apiKey = "API_KEY")
 
 // Create the AppFit Client
 val appFit = AppFit(configuration = configuration)

@@ -5,7 +5,7 @@ To configure the AppFit SDK, simply construct an `AppFitConfiguration` class and
 Your API Key can be obtained from your AppFit Dashboard.
 
 ```dart
-final configuration = AppFitConfiguration(apiKey: '<key>');
+final configuration = AppFitConfiguration(apiKey: 'API_KEY');
 final appFit = AppFit(configuration: configuration);
 ```
 
@@ -18,7 +18,7 @@ import 'package:appfit/appfit.dart';
 
 void main() {
     // Create the AppFitConfiguration
-    final configuration = AppFitConfiguration(apiKey: '<key>');
+    final configuration = AppFitConfiguration(apiKey: 'API_KEY');
 
     // Create the AppFit Client
     final appFit = AppFit(configuration: configuration);

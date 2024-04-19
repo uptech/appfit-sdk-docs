@@ -36,11 +36,30 @@ nav:
       - kotlin/index.md
       - Installation: kotlin/installation.md
       - Usage: kotlin/usage.md
+
+    # Browser
+    - Browser:
+      - browser/index.md
+      - Web Pages: 
+        - browser/web-pages/index.md
+        - Installation: browser/web-pages/installation.md
+        - Usage: browser/web-pages/usage.md
+      - Web Apps: 
+        - browser/web-apps/index.md
+        - Installation: browser/web-apps/installation.md
+        - Usage: browser/web-apps/usage.md
+  
+    # Node
+    - Node:
+      - node/index.md
+      - Installation: node/installation.md
+      - Usage: node/usage.md
   
   # SDK Links
   - Swift SDK: 'https://github.com/uptech/appfit-swift-sdk'
   - Flutter SDK: 'https://github.com/uptech/appfit-flutter-sdk'
   - Kotlin SDK: 'https://github.com/uptech/appfit-kotlin-sdk'
+  - JavaScript SDK: 'https://github.com/uptech/appfit-javascript-sdk'
 
 # Configuration
 theme:

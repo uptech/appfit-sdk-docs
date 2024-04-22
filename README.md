@@ -2,7 +2,7 @@
 
 ## Getting Setup
 
-The Docukent builder uses [MKDocs](https://www.mkdocs.org). In order to get things running and working as expected, we need to do a few things
+The Document builder uses [MKDocs](https://www.mkdocs.org). In order to get things running and working as expected, we need to do a few things
 
 ## Getting the Project Up and Running
 

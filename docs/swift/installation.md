@@ -1,9 +1,9 @@
 # Installing
 
-Use Swift Package Manager to install RepresentableKit.
+Use Swift Package Manager to install the AppFit Swift SDK.
 
 Use Xcode and add this repository as a dependency.
-Alternatively, add this repository as a dependency to your Package.swift.
+Alternatively, add this repository as a dependency to your `Package.swift`.
 
 ```swift
 dependencies: [

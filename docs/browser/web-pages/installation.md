@@ -76,7 +76,7 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
           var i = document.getElementsByTagName("script")[0];
           i.parentNode.insertBefore(t, i), i.parentNode.insertBefore(p, i);
         }),
-        window.startAppFit("my_secret_key_from_the_dashboard");
+        window.startAppFit("API_KEY");
     </script>
 
     <!------------------->

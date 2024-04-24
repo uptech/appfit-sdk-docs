@@ -7,15 +7,15 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
 Install the SDK using NPM or Yarn.
 
 === "NPM"
-    ```shell
+`shell
     npm install @uptechworks/appfit-browser-sdk
-    ```
+    `
 
 === "Yarn"
-    ```shell
+`shell
     yarn add @uptechworks/appfit-browser-sdk
-    ```
+    `
 
 ---
 
-The AppFit SDK is Open Source. Find it on [GitHub here](https://github.com/uptech/appfit-javascript-sdk)
+The AppFit SDK is open source. Find it on [GitHub here](https://github.com/uptech/appfit-javascript-sdk).

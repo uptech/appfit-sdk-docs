@@ -9,7 +9,7 @@ final configuration = AppFitConfiguration(apiKey: 'API_KEY');
 final appFit = AppFit(configuration: configuration);
 ```
 
-Once you have the client constructed, tracking an event is as simple as calling `trackEvent`
+Once you have the client constructed, tracking an event is as simple as calling `trackEvent`.
 
 A full example can be found below.
 
@@ -34,10 +34,10 @@ The AppFit SDK includes an `identify` call, that you can use to identify users i
 This method supports any String-based identifier.
 
 ```dart
-appfit.identifyUser("<id>");
+appfit.identifyUser("USER_ID");
 ```
 
-Setting this to null, will remove all events going forward from including the userId.
+Setting this identifier to null will remove user tracking from all events going forward.
 
 ```dart
 appfit.identifyUser(null);
@@ -45,4 +45,4 @@ appfit.identifyUser(null);
 
 # Cached Events
 
-We cache all events locally in the SDK. This allows us to rety failed events. If a device is experiencing network issues, we will retry the saved events later to help avoid losing any metrics.
+We cache all event locally in the SDK, allowing us to retry failed events. If a device is experiencing network issues, we will retry events once the device is back online to help avoid event data loss.

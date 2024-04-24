@@ -13,4 +13,4 @@ dependencies: [
 
 ---
 
-The AppFit SDK is Open Source. Find it on [GitHub here](https://github.com/uptech/appfit-swift-sdk)
+The AppFit SDK is open source. Find it on [GitHub here](https://github.com/uptech/appfit-swift-sdk).

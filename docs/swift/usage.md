@@ -9,7 +9,7 @@ let configuration = AppFitConfiguration(apiKey: "API_KEY")
 let appFit = AppFit(configuration: configuration)
 ```
 
-Once you have the client constructed, tracking an event is as simple as calling `trackEvent`
+Once you have the client constructed, tracking an event is as simple as calling `trackEvent`.
 
 A full example can be found below.
 
@@ -28,14 +28,14 @@ appFit.trackEvent(name: "event_name", properties: {"key": "value"})
 
 # Identifying Users
 
-The AppFit SDK includes an `identify` call, that you can use to identify users in your analytic events.
+The AppFit SDK includes an `identify` call which can be used to identify users in your analytic events.
 This method supports any String-based identifier.
 
 ```swift
-appfit.identifyUser("<id>")
+appfit.identifyUser("USER_ID")
 ```
 
-Setting this to null, will remove all events going forward from including the userId.
+Setting this identifier to null will remove user tracking from all events going forward.
 
 ```swift
 appfit.identifyUser(nil)
@@ -43,4 +43,4 @@ appfit.identifyUser(nil)
 
 # Cached Events
 
-We cache all events locally in the SDK. This allows us to rety failed events. If a device is experiencing network issues, we will retry the saved events later to help avoid losing any metrics.
+We cache all event locally in the SDK, allowing us to retry failed events. If a device is experiencing network issues, we will retry events once the device is back online to help avoid event data loss.

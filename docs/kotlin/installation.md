@@ -38,4 +38,4 @@ Once you have your gradle file configures, dont forget to enable internet access
 
 ---
 
-The AppFit SDK is Open Source. Find it on [GitHub here](https://github.com/uptech/appfit-kotlin-sdk)
+The AppFit SDK is open source. Find it on [GitHub here](https://github.com/uptech/appfit-kotlin-sdk).

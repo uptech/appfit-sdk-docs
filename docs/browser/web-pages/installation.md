@@ -6,48 +6,94 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
 
 1. Install AppFit by pasting the following `<script>` tag into your webpage between the `<head>` tags.
 
-    ```html
-    <script>
-    window.AppFit={cache:{},trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/appfit.js";var p=document.createElement("script");p.noModule=!0,p.src="https://d1433kipn7zjh1.cloudfront.net/appfit-legacy.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i),i.parentNode.insertBefore(p,i)},
+   ```html
+   <script>
+     (window.AppFit = {
+       cache: {},
+       trackEvent: (e, t) => (
+         window.AppFit.cache || (window.AppFit.cache = {}),
+         window.AppFit.cache.events || (window.AppFit.cache.events = []),
+         window.AppFit.cache.events.push({ eventName: e, payload: t }),
+         Promise.resolve()
+       ),
+       identifyUser(e) {
+         window.AppFit.cache || (window.AppFit.cache = {}),
+           (window.AppFit.cache.identity = e);
+       },
+     }),
+       (window.startAppFit = (e) => {
+         window.AppFit.apiKey = e;
+         var t = document.createElement("script");
+         (t.type = "module"),
+           (t.src = "https://d1433kipn7zjh1.cloudfront.net/appfit.js");
+         var p = document.createElement("script");
+         (p.noModule = !0),
+           (p.src = "https://d1433kipn7zjh1.cloudfront.net/appfit-legacy.js");
+         var i = document.getElementsByTagName("script")[0];
+         i.parentNode.insertBefore(t, i), i.parentNode.insertBefore(p, i);
+       }),
+       window.startAppFit("API_KEY");
+   </script>
+   ```
 
-    window.startAppFit("YOUR_WRITE_KEY");
-    </script>
-    ```
+2. Be sure to **replace `API_KEY` with your API secret**, leaving in the quotation marks. Your API Key can be obtained from your AppFit Dashboard.
 
-2. Be sure to **replace `YOUR_WRITE_KEY` with your API secret**, leaving in the quotation marks. Your API Key can be obtained from your AppFit Dashboard.
-
-3. Put any other AppFit `<script>` tags for tracking (e.g. tracking a screen view) *after* the tag above.
+3. Put any other AppFit `<script>` tags for tracking (e.g. tracking a screen view) _after_ the tag above.
 
 ### Example
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My Website</title>
+  <head>
+    <title>My Website</title>
 
-        <!---------------->
-        <!-- Pasted tag -->
-        <!---------------->
-        <script>
-        window.AppFit={cache:{},trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/appfit.js";var p=document.createElement("script");p.noModule=!0,p.src="https://d1433kipn7zjh1.cloudfront.net/appfit-legacy.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i),i.parentNode.insertBefore(p,i)},
-    
+    <!---------------->
+    <!-- Pasted tag -->
+    <!---------------->
+    <script>
+      (window.AppFit = {
+        cache: {},
+        trackEvent: (e, t) => (
+          window.AppFit.cache || (window.AppFit.cache = {}),
+          window.AppFit.cache.events || (window.AppFit.cache.events = []),
+          window.AppFit.cache.events.push({ eventName: e, payload: t }),
+          Promise.resolve()
+        ),
+        identifyUser(e) {
+          window.AppFit.cache || (window.AppFit.cache = {}),
+            (window.AppFit.cache.identity = e);
+        },
+      }),
+        (window.startAppFit = (e) => {
+          window.AppFit.apiKey = e;
+          var t = document.createElement("script");
+          (t.type = "module"),
+            (t.src = "https://d1433kipn7zjh1.cloudfront.net/appfit.js");
+          var p = document.createElement("script");
+          (p.noModule = !0),
+            (p.src = "https://d1433kipn7zjh1.cloudfront.net/appfit-legacy.js");
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(t, i), i.parentNode.insertBefore(p, i);
+        }),
         window.startAppFit("my_secret_key_from_the_dashboard");
-        </script>
+    </script>
 
-        <!------------------->
-        <!-- Example usage -->
-        <!------------------->
-        <script>
-            window.AppFit.trackEvent("screen_viewed", { screen: window.location.pathname })
-        </script>
-    </head>
+    <!------------------->
+    <!-- Example usage -->
+    <!------------------->
+    <script>
+      window.AppFit.trackEvent("screen_viewed", {
+        screen: window.location.pathname,
+      });
+    </script>
+  </head>
 
-    <body>
-        <main>
-            <h1>Welcome to My Website</h1>
-        </main>
-    </body>
+  <body>
+    <main>
+      <h1>Welcome to My Website</h1>
+    </main>
+  </body>
 </html>
 ```
 

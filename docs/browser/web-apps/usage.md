@@ -7,10 +7,11 @@ To configure the AppFit SDK, simply construct an `AppFitBrowserConfiguration` cl
 Your API Key can be obtained from your AppFit Dashboard.
 
 ```javascript
-const appFitConfig = new AppFitBrowserConfiguration('API_KEY');
+const appFitConfig = new AppFitBrowserConfiguration("API_KEY");
 ```
 
 This configuration should be passed to a new `AppFit` client:
+
 ```javascript
 const appFitClient = new AppFit(appFitConfig);
 ```
@@ -23,7 +24,7 @@ A full example can be found below.
 import {
   AppFit,
   AppFitBrowserConfiguration,
-} from '@uptechworks/appfit-browser-sdk';
+} from "@uptechworks/appfit-browser-sdk";
 
 // Create the AppFitBrowserConfiguration
 const config = new AppFitBrowserConfiguration("API_KEY");
@@ -32,7 +33,7 @@ const config = new AppFitBrowserConfiguration("API_KEY");
 const appFitClient = new AppFit(config);
 
 // Use the client to track events
-await appFitClient.trackEvent("event_name", { example: 'property' });
+await appFitClient.trackEvent("event_name", { example: "property" });
 ```
 
 ## Identifying Users

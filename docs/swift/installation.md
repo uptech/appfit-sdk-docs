@@ -1,6 +1,6 @@
 # Installing
 
-Use Swift Package Manager to install the AppFit Swift SDK.
+Use Swift Package Manager to install the AppFit SDK.
 
 Use Xcode and add this repository as a dependency.
 Alternatively, add this repository as a dependency to your `Package.swift`.

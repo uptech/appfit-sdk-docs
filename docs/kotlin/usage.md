@@ -31,7 +31,7 @@ The AppFit SDK includes an `identify` call, that you can use to identify users i
 This method supports any String-based identifier.
 
 ```kotlin
-appfit.identifyUser("<id>")
+appfit.identifyUser("USER_ID")
 ```
 
 Setting this to null, will remove all events going forward from including the userId.

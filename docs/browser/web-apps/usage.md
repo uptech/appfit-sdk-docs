@@ -45,7 +45,7 @@ This method supports any String-based identifier.
 appFit.identifyUser("USER_ID");
 ```
 
-Setting this identifier to null will remove user tracking from all events going forward.
+Setting this identifier to `undefined` will remove user tracking from all events going forward.
 
 ```javascript
 appFit.identifyUser();

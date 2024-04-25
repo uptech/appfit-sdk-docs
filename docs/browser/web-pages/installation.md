@@ -7,7 +7,7 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
 1. Install AppFit by pasting the following `<script>` tag into your webpage between the `<head>` tags.
 
    ```html
-   <script>
+   <script type="text/javascript">
     window.AppFit={cache:{},trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit.js";var p=document.createElement("script");p.noModule=!0,p.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-legacy.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i),i.parentNode.insertBefore(p,i)},
     
     window.startAppFit("YOUR_WRITE_KEY");
@@ -29,7 +29,7 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
     <!---------------->
     <!-- Pasted tag -->
     <!---------------->
-    <script>
+    <script type="text/javascript">
     window.AppFit={cache:{},trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit.js";var p=document.createElement("script");p.noModule=!0,p.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-legacy.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i),i.parentNode.insertBefore(p,i)},
     
     window.startAppFit("API_KEY");
@@ -38,7 +38,7 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
     <!------------------->
     <!-- Example usage -->
     <!------------------->
-    <script>
+    <script type="text/javascript">
       window.AppFit.trackEvent("screen_viewed", {
         screen: window.location.pathname,
       });

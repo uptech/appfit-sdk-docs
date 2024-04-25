@@ -9,7 +9,7 @@ See the following for specific use cases.
 This event will record a user visiting a webpage.
 
 ```html
-<script>
+<script type="text/javascript">
 window.AppFit.trackEvent("screen_viewed", { screen: window.location.pathname })
 </script>
 ```

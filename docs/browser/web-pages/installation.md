@@ -8,10 +8,10 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
 
    ```html
    <script type="text/javascript">
-    window.AppFit={cache:{},trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit.js";var p=document.createElement("script");p.noModule=!0,p.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-legacy.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i),i.parentNode.insertBefore(p,i)},
-    
-    window.startAppFit("YOUR_WRITE_KEY");
-    </script>
+   window.AppFit={cache:{},origin:"web",trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-v1.js";var i=document.createElement("script");i.noModule=!0,i.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-v1-legacy.js";var p=document.getElementsByTagName("script")[0];p.parentNode.insertBefore(t,p),p.parentNode.insertBefore(i,p)},
+   
+   window.startAppFit("YOUR_WRITE_KEY");
+   </script>
    ```
 
 2. Be sure to **replace `API_KEY` with your API secret**, leaving in the quotation marks. Your API Key can be obtained from your AppFit Dashboard.
@@ -30,7 +30,7 @@ The JavaScript SDK allows you to drop-in analytic tracking, direct to your AppFi
     <!-- Pasted tag -->
     <!---------------->
     <script type="text/javascript">
-    window.AppFit={cache:{},trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit.js";var p=document.createElement("script");p.noModule=!0,p.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-legacy.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i),i.parentNode.insertBefore(p,i)},
+    window.AppFit={cache:{},origin:"web",trackEvent:(e,t)=>(window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.events||(window.AppFit.cache.events=[]),window.AppFit.cache.events.push({eventName:e,payload:t}),Promise.resolve()),identifyUser(e){window.AppFit.cache||(window.AppFit.cache={}),window.AppFit.cache.identity=e}},window.startAppFit=e=>{window.AppFit.apiKey=e;var t=document.createElement("script");t.type="module",t.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-v1.js";var i=document.createElement("script");i.noModule=!0,i.src="https://d1433kipn7zjh1.cloudfront.net/browser-sdk/appfit-v1-legacy.js";var p=document.getElementsByTagName("script")[0];p.parentNode.insertBefore(t,p),p.parentNode.insertBefore(i,p)},
     
     window.startAppFit("API_KEY");
     </script>

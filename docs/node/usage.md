@@ -32,20 +32,26 @@ const config = new AppFitServerConfiguration("API_KEY");
 const appFitClient = new AppFit(config);
 
 // Use the client to track events
-await appFitClient.trackEvent("event_name", { example: 'property' });
+await appFitClient.trackEvent("event_name", { example: 'property' }, { userId: 'exampleId' });
 ```
 
 ## Identifying Users
 
-The AppFit SDK includes an identify call that you can use to identify users in your analytic events.
+The Node AppFit SDK requires a user identifier for each tracked event. One may send a user id, an anonymous id, or both.
+
 This method supports any String-based identifier.
 
+User ID:
 ```javascript
-appFitClient.identifyUser("USER_ID");
+await appFitClient.trackEvent("event_name", { example: 'property' }, { userId: 'exampleId' });
 ```
 
-Leaving out the user ID will remove all future events from including the id.
-
+Anonymous ID:
 ```javascript
-appFitClient.identifyUser();
+await appFitClient.trackEvent("event_name", { example: 'property' }, { anonymousId: 'example-anonymous-Id' });
+```
+
+Both:
+```javascript
+await appFitClient.trackEvent("event_name", { example: 'property' }, { userId: 'exampleId', anonymousId: 'example-anonymous-Id' });
 ```

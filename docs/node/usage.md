@@ -23,7 +23,7 @@ A full example can be found below.
 import {
   AppFit,
   AppFitServerConfiguration,
-} from '@uptechworks/appfit-node-sdk';
+} from '@uptechworks/appfit-server-sdk';
 
 // Create the AppFitServerConfiguration
 const config = new AppFitServerConfiguration("API_KEY");
